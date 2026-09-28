@@ -10,7 +10,7 @@ def pig_latin(word):
     # TODO (Part 1): return the Pig Latin form of a single lowercase word.
     #   If it starts with a vowel (a, e, i, o, u): add "way" to the end.
     #   Otherwise: move the first letter to the end and add "ay".
-    if (word=='a' or word=='e' or word=='i' or word=='o' or word=='u'):
+    if (word[0] in'aeiou'):
         return word+"way"
     else:
         return word[1:]+ word[0]+"ay"
